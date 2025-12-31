@@ -50,7 +50,7 @@ function drawRouletteWheel() {
         ctx.strokeStyle = "white";
         ctx.lineWidth = 2;
 
-        ctx.font = 'bold 16px Helvetica, Arial';
+        ctx.font = 'bold 20px Helvetica, Arial';
 
         for(let i = 0; i < options.length; i++) {
             const angle = startAngle + i * arc;
