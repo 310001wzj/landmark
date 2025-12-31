@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>去哪裡玩轉盤</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>不知道去哪玩？</h1>
+        <p>點擊按鈕，讓命運決定你的下一個目的地！</p>
+        
+        <div class="wheel-container">
+            <canvas id="wheelCanvas" width="500" height="500"></canvas>
+            <div class="arrow">▼</div>
+        </div>
+
+        <button id="spinBtn">開始轉動</button>
+        
+        <div id="result" class="result hidden">
+            去這裡：<span id="winner"></span>
+        </div>
+
+        <div class="controls">
+            <h3>編輯地點列表 (用逗號分隔)</h3>
+            <textarea id="locationsInput" rows="3">台北101, 淡水老街, 士林夜市, 陽明山, 西門町, 九份, 基隆廟口, 貓空, 饒河夜市, 松山文創</textarea>
+            <button id="updateBtn">更新轉盤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
